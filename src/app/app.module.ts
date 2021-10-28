@@ -8,9 +8,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { TodoListTreeComponent } from './notes/todo-list-tree/todo-list-tree.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
-  declarations: [AppComponent, NotesComponent],
+  declarations: [AppComponent, NotesComponent, TodoListTreeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -19,6 +22,8 @@ import { MatTreeModule } from '@angular/material/tree';
     MatButtonModule,
     MatIconModule,
     MatTreeModule,
+    MatSidenavModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
